@@ -1,3 +1,11 @@
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+@tailwind components;
+
+@layer components {
+    .search-filter{
+        @apply text-sm text-gray-600 shadow-lg border rounded-full mx-2 my-2 px-4 py-2 active:scale-90  transform transition duration-200 ease-out cursor-pointer hover:text-red-400;
+    }
+}
