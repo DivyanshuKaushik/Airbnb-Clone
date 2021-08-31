@@ -7,7 +7,7 @@ function InfoCard({ data }) {
     const { img, location, title, description, star, price, total } = data
 
     return (
-        <div className="flex w-full lg:w-3/5 pl-2 pr-4 py-6 border-b rounded-xl cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t" >
+        <div className="flex pl-2 pr-4 py-6 border-b rounded-xl cursor-pointer hover:opacity-90 hover:shadow-lg transition duration-200 ease-out first:border-t" >
             <div className="relative h-32 w-40 sm:h-48 sm:w-60 md:h-52 md:w-80 flex-shrink-0">
                 <Image src={img} layout="fill" objectFit="cover" className="rounded-2xl" />
             </div>

@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import {format} from 'date-fns'
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 function Search({searchResults}) {
 
@@ -33,6 +34,10 @@ function Search({searchResults}) {
                            <InfoCard key={index} data={item} />
                         )}
                     </div>
+                </section>
+
+                <section className="hidden lg:inline-flex w-2/5"> 
+                        <Map searchResults={searchResults} />
                 </section>
             </main>
         <Footer />
